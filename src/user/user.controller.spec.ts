@@ -56,7 +56,7 @@ describe('UserController', () => {
   });
 
   it('should return a single user by ID', async () => {
-    const result = await controller.findOne(1);
+    const result = await controller.findOne('1');
     expect(result).toEqual({
       id: expect.any(Number),
       name: 'User 1',
